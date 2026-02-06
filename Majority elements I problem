@@ -1,0 +1,8 @@
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        dictionary=Counter(nums)
+        result=0
+        for key in set(nums):
+            if dictionary[key]>len(nums)/2:
+                result=key
+        return result
