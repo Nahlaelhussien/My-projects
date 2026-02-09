@@ -1,0 +1,4 @@
+class Solution:    
+    def findUnion(self, a, b):
+        result=sorted(set(a).union(b))
+        return result
