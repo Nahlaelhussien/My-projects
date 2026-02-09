@@ -1,0 +1,7 @@
+class Solution:
+    def checkEqual(self, a, b) -> bool:
+        # check if one set is subset of the other
+        if sorted(a)==sorted(b):
+            return True
+        else:
+            return False
