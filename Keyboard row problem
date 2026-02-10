@@ -1,0 +1,15 @@
+class Solution:
+    def findWords(self, words: List[str]) -> List[str]:
+        result=[]
+        row1,row2,row3=set("qwertyuiop"),set("asdfghjkl"),set("zxcvbnm")
+       
+        for word in words:
+            lower_word = word.lower()
+            if all(letter in row1 for letter in lower_word):
+                result.append(word)
+            elif all(letter in row2 for letter in lower_word):
+                result.append(word)
+            elif all(letter in row3 for letter in lower_word):
+                result.append(word)
+        return result
+            
