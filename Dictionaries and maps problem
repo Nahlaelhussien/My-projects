@@ -1,0 +1,12 @@
+from sys import stdin 
+n=int(input())
+dic={}
+for i in range(n):
+    s=input().split()
+    dic[str(s[0]).lower()] = s[1]
+names=stdin.read().splitlines()
+for name in names:
+    if name in dic:
+        print(name+"="+dic[name])
+    else:
+        print("Not found")
