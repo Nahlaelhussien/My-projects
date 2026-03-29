@@ -1,12 +1,8 @@
-n=int(input())
-words=[]
+n = int(input())
 for i in range(n):
-	words.append(input())
-for word in words:
-	result=""
-	length=len(word)
-	if length>10:
-		result = word[0] + str(length - 2) + word[-1]
-		print(result)
-	else:
-		print(word)
+    w = input().strip()
+    length = len(w)
+    if length > 10:
+        print(w[0] + str(length - 2) + w[-1])
+    else:
+        print(w)
